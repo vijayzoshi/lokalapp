@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/jobFragment">
+
+    <fragment
+        android:id="@+id/jobFragment"
+        android:name="com.vijayjoshi.lokal_assessment_jobs.ui.JobFragment"
+        android:label="fragment_job"
+        tools:layout="@layout/fragment_job" >
+        <action
+            android:id="@+id/action_jobFragment_to_bookMarkFragment"
+            app:destination="@id/bookMarkFragment" />
+        <action
+            android:id="@+id/action_jobFragment_to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookMarkFragment"
+        android:name="com.vijayjoshi.lokal_assessment_jobs.ui.BookMarkFragment"
+        android:label="fragment_book_mark"
+        tools:layout="@layout/fragment_book_mark" >
+        <action
+            android:id="@+id/action_bookMarkFragment_to_jobFragment"
+            app:destination="@id/jobFragment" />
+        <action
+            android:id="@+id/action_bookMarkFragment_to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedFragment"
+        android:name="com.vijayjoshi.lokal_assessment_jobs.ui.DetailedFragment"
+        android:label="DetailedFragment" />
+</navigation>

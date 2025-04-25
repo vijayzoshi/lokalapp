@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/job_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:padding="10dp"
+    android:elevation="40dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Job Title"
+            android:maxLines="1"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/job_location"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Job Location"
+            android:maxLines="1"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/job_phone"
+            app:layout_constraintTop_toBottomOf="@+id/job_phone" />
+
+        <TextView
+            android:id="@+id/job_salary"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Job Salary"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/job_title"
+            app:layout_constraintTop_toBottomOf="@+id/job_title" />
+
+        <TextView
+            android:id="@+id/job_phone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginRight="20dp"
+            android:text="9999999999"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

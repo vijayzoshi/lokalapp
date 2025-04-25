@@ -1,0 +1,3 @@
+package com.vijayjoshi.lokal_assessment_jobs.model
+
+class TranslatedContent
